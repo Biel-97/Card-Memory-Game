@@ -1,0 +1,334 @@
+html {
+    height: 100%;
+}
+body {
+    margin: 0;
+    background-color:rgb(49, 49, 38);
+    height: 89%;
+}
+input[type="radio"]{
+    -webkit-appearance:none;
+}
+
+footer {
+    position: absolute;
+    width: 100%;
+    bottom: 0px;
+    height: 50px;
+}
+
+
+.jogo {
+    display: none;
+    justify-content: space-between;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    font-size: 16px;
+    opacity: 0;
+
+}
+
+.contador {
+    position: absolute;
+    top: 0%;
+    width: 100%;
+    height: 10px;
+    background-color: rgb(255, 217, 0);
+  }
+  
+  .load {
+    background-color: red;
+    height: 10px;
+    position: absolute;
+  }
+  .corpo  {
+    display: flex;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+}
+.inicial {
+    position: relative;
+    border: solid 5px rgb(85, 88, 73);
+    box-shadow: 15px 15px 10px 0 rgba(28, 29, 24, 0.5);
+    background-color: rgb(35, 36, 32);
+    border-radius: 35%;
+    top: 15%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    align-items: center;
+    height: 25em;
+    width: 35em;
+    opacity: 1;
+}
+.escolha {
+    display: none;
+    flex-direction: column;
+    align-self: center;
+    justify-self: center;
+    padding: 15px;
+    transition: 0.5s;
+}
+.escolha span {
+    left: 25%;
+    top: 15%;
+}
+
+.play, .desc{
+    position: relative;
+    height: 80px;
+    display: flex;
+    align-self: center;
+}
+
+.play {
+    height: 80px; 
+    border-radius: 40px;
+}
+.play:hover, .desc:hover {
+    cursor: pointer;
+}
+
+.desc {
+    display: flex;
+    padding: 2px;
+    justify-self: center;
+    align-self: center;
+}
+
+.descricaotxt {
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    box-sizing: content-box; 
+}
+.descricaotxt p {
+    margin: 15px;
+    color: white;
+    font-size: large;
+    font-family: 'Indie Flower', cursive;
+}
+
+.opcao{
+    height: 3em;
+    width: 10em;
+    border: solid 5px rgb(85, 88, 73);
+    margin: auto;
+    border-radius: 10px;
+    position: relative;
+    color: rgb(85, 88, 73);
+    transition: 0.5s;
+    margin-bottom: 10px;
+ }
+ .opcao:hover{
+    cursor:pointer;
+    background-color: rgb(209, 181, 24);
+	color: #ffffff;
+	box-shadow: 0px 0px 15px yellow
+}
+
+ .opcao>span {
+    font-size: 25px;
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    position: relative;
+    transform: translate(-50%, 80%);
+}
+
+
+
+.conteiner-card {
+    border: solid 5px rgb(85, 88, 73);
+    box-shadow: 15px 15px 10px 0 rgba(28, 29, 24, 0.5);
+    background-color: rgb(35, 36, 32);
+    border-radius: 5%;
+    height: 90%;
+    width: 95%;
+    box-sizing: content-box;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: space-around;
+    margin: 1em;
+}
+
+/* segura a parte frontal e verso */
+.carta {
+    position: relative;
+    margin: 0.5em;
+    top: 0;
+    left: 0;
+    width: 8em;
+    height: 10em;
+    border-radius: 10%;
+    transform-style: preserve-3d;
+    transition: all 0.4s ease;
+}
+
+
+.frontal {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    border: solid 1px rgb(85, 88, 73);
+    backface-visibility: hidden;
+    overflow: hidden;
+    background-color: rgb(41, 41, 41);
+    color: #000;
+}
+
+.carta img {
+    position: absolute;
+    top: 20%;
+    left: 30%;
+    width: 3em;
+    height: 5em;
+    opacity: 0.5;
+}
+
+/* verso da carta, imagem ou valor da carta */
+.verso {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    backface-visibility: hidden;
+    overflow: hidden;
+    background: #252108;
+    border: solid 1px rgb(63, 63, 44);
+    color: #333;
+    text-align: center;
+    transform: rotateY(180deg);
+}
+
+.resultado {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    left: 10px;
+    color: white;
+    font-size: large;
+    font-family: 'Indie Flower', cursive;
+}
+
+.derrota span, .vitoria span, .tempo span, .dificuldade span {
+    display: flex;
+    flex-direction: row;
+}
+
+
+/*This block (starts here) is merely styling for the flip card, and is NOT an essential part of the flip code */
+.frontal h1,
+.verso h1 {
+    font-family: 'zilla slab', sans-serif;
+    padding: 30px;
+    font-weight: bold;
+    font-size: 24px;
+    text-align: center;
+}
+
+.frontal p,
+.verso p {
+    font-family: 'zilla slab', sans-serif;
+    padding: 30px;
+    font-weight: normal;
+    font-size: 12px;
+    text-align: center;
+}
+
+@media (max-width: 680px) {
+    .carta {
+        margin: 4px;
+        height: 4.5em;
+        width: 3em;
+    }    .verso img {
+        top: 25%;
+        left: 14%;
+        width: 1.5em;
+        height: 2.5em;
+    }
+}
+@media (max-width: 680px) and (max-height: 380px) {
+    .carta {
+        margin: 4px;
+        height: 4em;
+        width: 2em;
+    }    .verso img {
+        top: 20%;
+        left: 23%;
+        width: 3em;
+        height: 5em;
+    }
+}
+@media (max-width: 780px) and (min-width: 680px) {
+    .carta{
+        margin: 5px;
+        height: 5em;
+        width: 3.5em;
+    }    .verso img {
+        top: 20%;
+        left: 23%;
+        width: 2em;
+        height: 3em;
+    }
+}
+
+@media (max-width: 1000px) and (min-width: 780px) {
+    .carta{
+        margin: 4px;
+        height: 5.7em;
+        width: 3.7em;
+    }    .verso img {
+        top: 25%;
+        left: 25%;
+        width: 2em;
+        height: 3em;
+    }
+}
+
+@media (max-width: 1500px) and (min-width: 1000px) {
+    .carta{
+        margin: 10px;
+        height: 6em;
+        width: 4em;
+    }    .verso img {
+        top: 25%;
+        left: 25%;
+        width: 2em;
+        height: 3em;
+    }
+}
+@media (max-width: 2000px) and (min-width: 1500px) {
+    .carta{
+        margin: 5px;
+        height: 7em;
+        width: 5em;
+    }    .verso img {
+        top: 25%;
+        left: 22%;
+        width: 2.5em;
+        height: 4em;
+    }
+}
+@media (min-width: 2000px) {
+    .carta{
+        margin: 15px;
+        height: 7.5em;
+        width: 5.5em;
+    }
+    .verso img {
+        top: 20%;
+        left: 23%;
+        width: 3em;
+        height: 5em;
+    }
+}   

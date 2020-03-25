@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Memory</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="contador">
+        <div class="load"></div>
+    </div>
+    <div class="corpo">
+        <div class="inicial">
+            <div class="play">
+                <a class="play"><img class="play" src="img/play.png"></a>
+
+            </div>
+            <form class="escolha">
+                <label class="opcao" id="facil">
+                    <input type="radio" name="radio">
+                    <span>Fácil</span>
+                </label>
+                <label class="opcao" id="medio">
+                    <input type="radio" name="radio">
+                    <span>Médio</span>
+                </label>
+                <label class="opcao" id="dificil">
+                    <input type="radio" name="radio">
+                    <span>Dificil</span>
+                </label>
+            </form>
+            <div class="resultado">
+                <p> Vitoria: <span class="Vitoria">0</span></p>
+
+                <p>Derrota: <span class="derrota">0</span></p>
+                <p>Cartas Virtadas: <span class="viradas">0</span> </p>
+                <p class="dificuldade"> </p>
+            </div>
+            <div class="desc">
+                <a class="desc"><img class="desc" src="img/desc.png"></a>
+
+            </div>
+            <div class="descricaotxt">
+                <p>O jogo da memória é um clássico jogo formado por cartas que apresentam uma
+                    figura em um dos lados. Cada figura se repete em duas cartas diferentes. Á o começar o jogo, as
+                    cartas são postas com as figuras voltadas para baixo, para que não possam ser vistas.
+                </p>
+                <p> Seu objetivo é encontrar as cartas iguais dentro do tempo.</p>
+                <p>Boa Sorte!</p>
+            </div>
+        </div>
+        <section class="jogo"></section>
+
+    </div>
+    </div>
+
+    <script src="script.js">
+    </script>
+
+</body>
+
+</html>

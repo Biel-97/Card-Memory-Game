@@ -96,7 +96,7 @@ const loading = function loading(comprimento, tempo) {
             fimdejogo()
             clearInterval(id);
         } else {
-            // width++;
+            width++;
             elem.style.width = width + 'px';
         }
     }

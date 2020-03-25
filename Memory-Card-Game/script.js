@@ -117,7 +117,7 @@ const transicao = function transicao(antes_div, depois_div) {
     setTimeout(function () {
         depois.style.opacity = '1'
         depois.style.transition = '1s'
-    }, 2000);
+    }, 1500);
 }
 
 

@@ -1,4 +1,4 @@
-# Memory-Card-Game
+# Card Memory Game
 
 Projeto com objetivo didático, sem frameworks ou APIS.
 Disponível também no Codepen.io/Biel_

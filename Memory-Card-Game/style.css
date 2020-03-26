@@ -184,14 +184,6 @@ footer {
     color: #000;
 }
 
-.carta img {
-    position: absolute;
-    top: 20%;
-    left: 30%;
-    width: 3em;
-    height: 5em;
-    opacity: 0.5;
-}
 
 /* verso da carta, imagem ou valor da carta */
 .verso {
@@ -250,11 +242,8 @@ footer {
         margin: 4px;
         height: 4.5em;
         width: 3em;
-    }    .verso img {
-        top: 25%;
-        left: 14%;
-        width: 1.5em;
-        height: 2.5em;
+    }    .verso  {
+        background-size: 47px 72px;
     }
 }
 @media (max-width: 680px) and (max-height: 380px) {
@@ -262,11 +251,8 @@ footer {
         margin: 4px;
         height: 4em;
         width: 2em;
-    }    .verso img {
-        top: 20%;
-        left: 23%;
-        width: 3em;
-        height: 5em;
+    }    .verso  {
+        background-size: 32px 64px;
     }
 }
 @media (max-width: 780px) and (min-width: 680px) {
@@ -274,11 +260,8 @@ footer {
         margin: 5px;
         height: 5em;
         width: 3.5em;
-    }    .verso img {
-        top: 20%;
-        left: 23%;
-        width: 2em;
-        height: 3em;
+    }    .verso  {
+        background-size: 55px 80px;
     }
 }
 
@@ -287,11 +270,8 @@ footer {
         margin: 4px;
         height: 5.7em;
         width: 3.7em;
-    }    .verso img {
-        top: 25%;
-        left: 25%;
-        width: 2em;
-        height: 3em;
+    }    .verso  {
+        background-size: 59px 90px;
     }
 }
 
@@ -300,11 +280,8 @@ footer {
         margin: 10px;
         height: 6em;
         width: 4em;
-    }    .verso img {
-        top: 25%;
-        left: 25%;
-        width: 2em;
-        height: 3em;
+    }    .verso  {
+        background-size: 64px 96px;
     }
 }
 @media (max-width: 2000px) and (min-width: 1500px) {
@@ -312,11 +289,8 @@ footer {
         margin: 5px;
         height: 7em;
         width: 5em;
-    }    .verso img {
-        top: 25%;
-        left: 22%;
-        width: 2.5em;
-        height: 4em;
+    }    .verso  {
+        background-size: 80px 112px;
     }
 }
 @media (min-width: 2000px) {
@@ -325,10 +299,7 @@ footer {
         height: 7.5em;
         width: 5.5em;
     }
-    .verso img {
-        top: 20%;
-        left: 23%;
-        width: 3em;
-        height: 5em;
+    .verso  {
+        background-size: 88px 120px;
     }
 }   

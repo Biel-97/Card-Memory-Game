@@ -160,7 +160,7 @@ criar_jogo = function (nivel) {
                 console.log(tentativa)
                 e.style.transform = "rotateY(180deg)"
                 if (fonte.length <= 1) {
-                    fonte.push(e.lastChild.firstChild.src)
+                    fonte.push(e.lastChild.style.backgroundImage)
                     tentativa.push(e.lastChild)
                     carta.push(e)
                 }
@@ -221,9 +221,7 @@ criar_jogo = function (nivel) {
             imagens.push(diretorio + nome_imagem + '.png')
         }
         versos.forEach((e) => {
-            let figure1 = document.createElement('img')
-            figure1.src = imagens[criarUnico()]
-            e.appendChild(figure1)
+            e.style.backgroundImage = `url('${imagens[criarUnico()]}')`
         })
     }
     imagem_verso('verso')
